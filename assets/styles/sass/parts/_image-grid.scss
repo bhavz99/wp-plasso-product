@@ -1,0 +1,47 @@
+
+/* Image Grid
+---------------------------------------------------------------------------------------------------- */
+
+.image-grid {
+	.content {
+		max-width: 1140px;
+		padding-top: 0;
+		margin-top: -100px;
+	}
+}
+
+.grid-item {
+	float: left;
+	background: $grey2;
+	margin: 10px;
+}
+
+.grid-1x1 {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	width: calc(25% - 20px);
+
+	padding-top: calc(25% - 20px);
+}
+
+.grid-2x1 {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	width: calc(50% - 20px);
+
+	padding-top: calc(25% - 20px);
+}
+
+.grid-1x2 {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	width: calc(25% - 20px);
+
+	padding-top: calc(50% - 20px);
+}

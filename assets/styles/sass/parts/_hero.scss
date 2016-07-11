@@ -1,0 +1,19 @@
+
+/* Hero
+---------------------------------------------------------------------------------------------------- */
+
+.hero-text {
+	text-align: center;
+	background-color: white;
+
+	h2 {
+		margin-bottom: 30px;
+		font-weight: 300;
+	}
+
+	h6 {
+		margin: 40px auto 0;
+		max-width: 800px;
+		color: $grey4;
+	}
+}

@@ -1,0 +1,37 @@
+
+/* Footer
+---------------------------------------------------------------------------------------------------- */
+
+footer {
+	background-color: $grey1;
+	color: $grey4;
+	font-size: 12px;
+
+	.content {
+		padding-top: 40px;
+		padding-bottom: 50px;
+	}
+
+	nav {
+		display: inline-block;
+		padding-top: 8px;
+		color: white;
+
+		a {
+			color: white;
+		}
+
+		li {
+			list-style: none;
+			display: inline;
+			margin-right: 30px;
+			font-size: 12px;
+			font-weight: 600;
+		}
+	}
+
+	p {
+		margin-top: 8px;
+		float: right;
+	}
+}

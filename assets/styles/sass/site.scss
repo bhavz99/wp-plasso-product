@@ -1,0 +1,28 @@
+
+// Universals: Get all universal styles.
+
+@import 'universal/normalize';
+@import 'universal/variables';
+@import 'universal/general';
+
+// Vendor: Get all vendor styles.
+
+@import 'vendor/simplegrid';
+@import 'vendor/mobilemenu';
+@import 'vendor/animate';
+
+// Content: Get all content specific styles.
+
+@import 'parts/message';
+@import 'parts/header';
+@import 'parts/slider';
+@import 'parts/hero';
+@import 'parts/features';
+@import 'parts/image-grid';
+@import 'parts/testimonials';
+@import 'parts/cta-bar';
+@import 'parts/blog';
+@import 'parts/newsletter';
+@import 'parts/footer';
+@import 'parts/panels';
+@import 'parts/responsive';

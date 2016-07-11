@@ -1,0 +1,99 @@
+
+/* General Styles
+---------------------------------------------------------------------------------------------------- */
+
+html {
+	box-sizing: border-box;
+	background-color: $grey1;
+	box-sizing: inherit;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	font-family: $sans-serif;
+	font-size: 14px;
+	line-height: 1.8em;
+	color: $grey3;
+}
+
+h1 { font-size: 40px; }
+h2 { font-size: 36px; }
+h3 { font-size: 28px; }
+h4 { font-size: 24px; }
+h5 { font-size: 20px; }
+h6 { font-size: 18px; }
+
+h1, h2, h3 {
+	font-weight: 400;
+	line-height: 1.4em;
+	color: $grey2
+}
+
+h4, h5, h6 {
+	font-weight: 400;
+	line-height: 1.7em;
+	color: $grey2
+}
+
+a {
+	color: $babyblue2;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+a:hover {
+	color: $babyblue2;
+}
+
+a:link, a:visited, a:hover {
+	@include transition1;
+}
+
+strong {
+	font-weight: 600;
+}
+
+hr {
+
+}
+
+hr.divider {
+	max-width: 200px;
+	border: 0;
+	border-top: 2px $grey6 solid;
+}
+
+.btn {
+	-webkit-border-radius: 2;
+	-moz-border-radius: 2;
+	border-radius: 2px;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 12px;
+	font-weight: 600;
+	background: $babyblue1;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+}
+
+.btn:hover {
+	color: white;
+}
+
+.btn:hover {
+  	background: $babyblue2;
+  	text-decoration: none;
+}
+
+.wrapper {
+	background-color: $grey7;
+
+	min-height: 100%;
+}
+
+.content {
+	max-width: $contentwidth;
+	margin: 0 auto;
+	padding: 100px 30px 0;
+}

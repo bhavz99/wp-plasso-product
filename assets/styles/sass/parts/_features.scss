@@ -1,0 +1,30 @@
+
+/* Features List
+---------------------------------------------------------------------------------------------------- */
+
+.features {
+	background-color: white;
+
+	.content {
+		padding-bottom: 200px;
+	}
+}
+
+.grid {
+	text-align: center;
+
+	img {
+		max-width: 100%;
+
+		margin-bottom: 20px;
+	}
+
+	h6 {
+		font-weight: 600;
+		margin-bottom: 20px;
+	}
+
+	p {
+		color: $grey4;
+	}
+}

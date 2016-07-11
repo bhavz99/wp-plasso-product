@@ -1,0 +1,87 @@
+@media all and (max-width: 767px) {
+
+    /* General
+    ------------------------------------------------------------------------------------------------ */
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    h6 {
+        font-size: 16px;
+    }
+
+    .content {
+        padding: 60px 20px 0;
+    }
+
+    /* Header
+    ------------------------------------------------------------------------------------------------ */
+
+    header .content {
+        padding: 15px 20px;
+    }
+
+    header .content .nav {
+        display: none;
+    }
+
+    /* Slider
+    ------------------------------------------------------------------------------------------------ */
+
+    .slider {
+        padding: 20% 0 26%;
+    }
+
+    .slider .content {
+        padding: 0 20px;
+    }
+
+    /* Call to Action Bar
+    ------------------------------------------------------------------------------------------------ */
+
+    .cta-bar {
+        margin-top: 40px;
+    }
+
+    .cta-bar h5 {
+        margin: 0 0 20px;
+    }
+
+    /* Newsletter
+    ------------------------------------------------------------------------------------------------ */
+
+    .newsletter input {
+        width: 100%;
+        margin: 0 0 10px;
+        text-align: center;
+    }
+
+    .newsletter button {
+        width: 100%;
+    }
+
+    /* Footer
+    ------------------------------------------------------------------------------------------------ */
+
+    footer {
+        text-align: center;
+    }
+
+    footer .content {
+        padding: 30px 20px;
+    }
+
+    footer nav {
+        display: none;
+    }
+    
+    footer p {
+        margin-top: 0;
+        float: none;
+    }
+}
