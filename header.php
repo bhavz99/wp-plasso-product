@@ -35,8 +35,8 @@
         <div class="mobile-menu">
             <ul>
                 <?php if (!empty($plasso['header_menu'])) {
-    			    foreach($plasso['header_menu'] as $image) { ?>
-                        <li><a href="<?php echo $image['page']; ?>"><?php echo $image['title']; ?></a></li>
+    			    foreach($plasso['header_menu'] as $menu) { ?>
+                        <li><a href="<?php echo get_page_link($menu['page']); ?>"><?php echo $menu['title']; ?></a></li>
     				<?php }
     			} ?>
 
