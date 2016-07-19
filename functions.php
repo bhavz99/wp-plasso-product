@@ -1,5 +1,10 @@
 <?php
 
+/* Theme Support: Titles, etc.
+---------------------------------------------------------------------------------------------------- */
+
+add_theme_support('title-tag');
+
 /* Include Works: Customizer, etc.
 ---------------------------------------------------------------------------------------------------- */
 
@@ -56,7 +61,7 @@ add_action('wp_enqueue_scripts', 'plasso_enqueue');
 /* Required Plugins: Make sure Kirki gets installed.
 ---------------------------------------------------------------------------------------------------- */
 
-function folio_require_plugins() {
+function plasso_require_plugins() {
 
 	// We need Kirki.
 	$plugins = array(
@@ -82,15 +87,15 @@ function folio_require_plugins() {
 		'is_automatic' => false, // Automatically activate plugins after installation or not.
 		'message' => '', // Message to output right before the plugins table.
 		'strings' => array(
-			'page_title' => __( 'Install and Activate Required Plugins', 'leeflets_textdomain' ),
-			'menu_title' => __( 'Required Plugins', 'leeflets_textdomain' ),
+			'page_title' => __('Install and Activate Required Plugins', 'leeflets_textdomain'),
+			'menu_title' => __('Required Plugins', 'leeflets_textdomain'),
 			'nag_type' => 'updated', // Determines admin notice type - can only be 'updated', 'update-nag' or 'error'.
 		)
 	);
 
 	tgmpa( $plugins, $config );
 }
-add_action( 'tgmpa_register', 'folio_require_plugins' );
+add_action( 'tgmpa_register', 'plasso_require_plugins' );
 
 /* MailChimp: Form handling for MailChimp subscriptions.
 ---------------------------------------------------------------------------------------------------- */
