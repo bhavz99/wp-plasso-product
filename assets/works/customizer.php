@@ -477,6 +477,17 @@ function plasso_customizer() {
 			'priority' => 10,
 		));
 
+		// Plasso Toggle: Toggle the plasso link.
+
+		Kirki::add_field('plasso_theme', array(
+			'settings' => 'plasso[footer_plasso]',
+			'label' => __('Powered by Plasso', 'plasso_textdomain'),
+            'description' => __('Toggle the Powered by Plasso link on or off.'),
+			'section' => 'footer_section',
+			'type' => 'toggle',
+			'priority' => 10,
+		));
+
 		// Text: The footer text.
 
         Kirki::add_field('plasso_theme', array(
