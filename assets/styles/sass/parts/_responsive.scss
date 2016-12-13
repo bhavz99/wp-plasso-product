@@ -1,87 +1,87 @@
 @media all and (max-width: 767px) {
 
-    /* General
-    ------------------------------------------------------------------------------------------------ */
+  /* General
+  ------------------------------------------------------------------------------------------------ */
 
-    h2 {
-        font-size: 28px;
-    }
+  h2 {
+    font-size: 28px;
+  }
 
-    h5 {
-        font-size: 18px;
-    }
+  h5 {
+    font-size: 18px;
+  }
 
-    h6 {
-        font-size: 16px;
-    }
+  h6 {
+    font-size: 16px;
+  }
 
-    .content {
-        padding: 60px 20px 0;
-    }
+  .content {
+    padding: 60px 20px 0;
+  }
 
-    /* Header
-    ------------------------------------------------------------------------------------------------ */
+  /* Header
+  ------------------------------------------------------------------------------------------------ */
 
-    header .content {
-        padding: 15px 20px;
-    }
+  header .content {
+    padding: 15px 20px;
+  }
 
-    header .content .nav {
-        display: none;
-    }
+  header .content .nav {
+    display: none;
+  }
 
-    /* Slider
-    ------------------------------------------------------------------------------------------------ */
+  /* Slider
+  ------------------------------------------------------------------------------------------------ */
 
-    .slider {
-        padding: 20% 0 26%;
-    }
+  .slider {
+    padding: 20% 0 26%;
+  }
 
-    .slider .content {
-        padding: 0 20px;
-    }
+  .slider .content {
+    padding: 0 20px;
+  }
 
-    /* Call to Action Bar
-    ------------------------------------------------------------------------------------------------ */
+  /* Call to Action Bar
+  ------------------------------------------------------------------------------------------------ */
 
-    .cta-bar {
-        margin-top: 40px;
-    }
+  .cta-bar {
+    margin-top: 40px;
+  }
 
-    .cta-bar h5 {
-        margin: 0 0 20px;
-    }
+  .cta-bar h5 {
+    margin: 0 0 20px;
+  }
 
-    /* Newsletter
-    ------------------------------------------------------------------------------------------------ */
+  /* Newsletter
+  ------------------------------------------------------------------------------------------------ */
 
-    .newsletter input {
-        width: 100%;
-        margin: 0 0 10px;
-        text-align: center;
-    }
+  .newsletter input {
+    width: 100%;
+    margin: 0 0 10px;
+    text-align: center;
+  }
 
-    .newsletter button {
-        width: 100%;
-    }
+  .newsletter button {
+    width: 100%;
+  }
 
-    /* Footer
-    ------------------------------------------------------------------------------------------------ */
+  /* Footer
+  ------------------------------------------------------------------------------------------------ */
 
-    footer {
-        text-align: center;
-    }
+  footer {
+    text-align: center;
+  }
 
-    footer .content {
-        padding: 30px 20px;
-    }
+  footer .content {
+    padding: 30px 20px;
+  }
 
-    footer nav {
-        display: none;
-    }
-    
-    footer p {
-        margin-top: 0;
-        float: none;
-    }
+  footer nav {
+    display: none;
+  }
+
+  footer p {
+    margin-top: 0;
+    float: none;
+  }
 }

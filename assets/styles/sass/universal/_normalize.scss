@@ -7,18 +7,18 @@ a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q
 small, strike, strong, sub, sup, tt, var, b, u, i, center,
 dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
-    margin: 0; padding: 0;  border: 0; outline: 0; font-size: 100%;
-    vertical-align: baseline; background: transparent;
+  margin: 0; padding: 0;  border: 0; outline: 0; font-size: 100%;
+  vertical-align: baseline; background: transparent;
 }
 
 html,
 body {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 *, *:before, *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }

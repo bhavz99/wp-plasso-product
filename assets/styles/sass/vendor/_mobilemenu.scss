@@ -1,187 +1,187 @@
 $default-spacing: 25px;
 $screen-xs: 767px;
 .wrapper {
-    background: #F5F7FA;
-    position: relative;
-    z-index: 2;
-    transform: translate3d( 0, 0, 0 );
-    /* X, Y, Z */
-    -webkit-transform: translate3d( 0, 0, 0 );
-    -webkit-box-shadow: 10px 0 20px 0 rgba(0,0,0,0.15);
-    -moz-box-shadow: 10px 0 20px 0 rgba(0,0,0,0.15);
-    box-shadow: 10px 0 20px 0 rgba(0,0,0,0.15);
+  background: #F5F7FA;
+  position: relative;
+  z-index: 2;
+  transform: translate3d( 0, 0, 0 );
+  /* X, Y, Z */
+  -webkit-transform: translate3d( 0, 0, 0 );
+  -webkit-box-shadow: 10px 0 20px 0 rgba(0,0,0,0.15);
+  -moz-box-shadow: 10px 0 20px 0 rgba(0,0,0,0.15);
+  box-shadow: 10px 0 20px 0 rgba(0,0,0,0.15);
 }
 .mobile-menu {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 240px;
-    z-index: 1;
-    /* Make sure the z-index is lower than the .wrapper */
-    ul {
-        padding: 0;
-        margin: 0;
-        list-style-type: none;
-        li {
-            padding: 0;
-            margin: 0;
-            a {
-                padding: 20px 30px;
-                display: block;
-                color: white;
-                text-decoration: none;
-                border-bottom: 1px solid #434A54;
-                &.active {
-                    background: #F5F7FA;
-                    color: black;
-                }
-            }
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 240px;
+  z-index: 1;
+  /* Make sure the z-index is lower than the .wrapper */
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    li {
+      padding: 0;
+      margin: 0;
+      a {
+        padding: 20px 30px;
+        display: block;
+        color: white;
+        text-decoration: none;
+        border-bottom: 1px solid #434A54;
+        &.active {
+          background: #F5F7FA;
+          color: black;
         }
+      }
     }
-    .btn {
-        border-radius: 0;
-        font-size: 14px;
-    }
+  }
+  .btn {
+    border-radius: 0;
+    font-size: 14px;
+  }
 }
 .mobile-menu,
 .wrapper {
-    -webkit-backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  overflow: hidden;
 }
 .header {
-    ul {
-        display: block;
-        @media (max-width: $screen-xs) {
-            display: none;
-        }
+  ul {
+    display: block;
+    @media (max-width: $screen-xs) {
+      display: none;
     }
+  }
 }
 /* Menu animating burger icon */
 $button-size: 20px;
 $squish-speed: 300ms;
 $ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
 .toggle-menu {
-    display: none;
-    @media (max-width: $screen-xs) {
-        display: block;
+  display: none;
+  @media (max-width: $screen-xs) {
+    display: block;
+  }
+  cursor: pointer;
+  user-select: none;
+  padding: $default-spacing;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  &:focus,
+  &:hover {
+    outline: 0;
+    background: none!important;
+    .burger-lines {
+      background-color: #434A54;
+      &:after,
+      &:before {
+        background-color: #434A54;
+      }
     }
-    cursor: pointer;
-    user-select: none;
-    padding: $default-spacing;
-    background: none;
-    border: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    &:focus,
-    &:hover {
-        outline: 0;
-        background: none!important;
-        .burger-lines {
-            background-color: #434A54;
-            &:after,
-            &:before {
-                background-color: #434A54;
-            }
-        }
+  }
+  &.active {
+    .burger-lines {
+      background: transparent; // fade away the middle line
+      &:after,
+      &:before {
+        transition: top $squish-speed $ease-out-quart, transform $squish-speed $squish-speed $ease-out-quart;
+        top: 0;
+        width: $button-size;
+      }
+      &:before {
+        transform: rotate3d(0,0,1,45deg) scale(1.1);
+      }
+      &:after {
+        transform: rotate3d(0,0,1,-45deg) scale(1.1);
+      }
     }
-    &.active {
-        .burger-lines {
-            background: transparent; // fade away the middle line
-            &:after,
-            &:before {
-                transition: top $squish-speed $ease-out-quart, transform $squish-speed $squish-speed $ease-out-quart;
-                top: 0;
-                width: $button-size;
-            }
-            &:before {
-                transform: rotate3d(0,0,1,45deg) scale(1.1);
-            }
-            &:after {
-                transform: rotate3d(0,0,1,-45deg) scale(1.1);
-            }
-        }
-    }
+  }
 }
 .burger-lines {
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+  transition: all $squish-speed ease;
+  width: $button-size;
+  height: 3px;
+  background-color: #434A54;
+  position: relative;
+  top: -2px;
+  &:after,
+  &:before {
+    content: '';
     display: inline-block;
-    cursor: pointer;
-    user-select: none;
-    transition: all $squish-speed ease;
     width: $button-size;
     height: 3px;
     background-color: #434A54;
-    position: relative;
-    top: -2px;
-    &:after,
-    &:before {
-        content: '';
-        display: inline-block;
-        width: $button-size;
-        height: 3px;
-        background-color: #434A54;
-        position: absolute;
-        left: 0;
-        transform-origin: 50% 50%;
-        transition: top $squish-speed $squish-speed $ease-out-quart, transform $squish-speed $ease-out-quart, background-color $squish-speed $ease-out-quart;
-    }
-    &:before {
-        top: 8px;
-    }
-    &:after {
-        top: -8px;
-    }
+    position: absolute;
+    left: 0;
+    transform-origin: 50% 50%;
+    transition: top $squish-speed $squish-speed $ease-out-quart, transform $squish-speed $ease-out-quart, background-color $squish-speed $ease-out-quart;
+  }
+  &:before {
+    top: 8px;
+  }
+  &:after {
+    top: -8px;
+  }
 }
 /* Animating mobile menu */
 /* Show the menu when animating or visible */
 .animating .mobile-menu,
 .menu-visible .mobile-menu {
-    display: block;
+  display: block;
 }
 /***
- * If the animating class is present then apply
- * the CSS transition to .wrapper over 250ms.
- */
+* If the animating class is present then apply
+* the CSS transition to .wrapper over 250ms.
+*/
 .animating .wrapper {
-    transition: transform 0.25s ease-in-out;
-    -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
 }
 /***
- * If the left class is present then transform
- * the .wrapper element 240px to the left.
- */
+* If the left class is present then transform
+* the .wrapper element 240px to the left.
+*/
 .animating.left .wrapper {
-    transform: translate3d( -240px, 0, 0 );
-    -webkit-transform: translate3d( -240px, 0, 0 );
+  transform: translate3d( -240px, 0, 0 );
+  -webkit-transform: translate3d( -240px, 0, 0 );
 }
 /***
- * If the right class is present then transform
- * the .wrapper element 240px to the right.
- */
+* If the right class is present then transform
+* the .wrapper element 240px to the right.
+*/
 .animating.right .wrapper {
-    transform: translate3d( 240px, 0, 0 );
-    -webkit-transform: translate3d( 240px, 0, 0 );
+  transform: translate3d( 240px, 0, 0 );
+  -webkit-transform: translate3d( 240px, 0, 0 );
 }
 /***
- * If the menu-visible class is present then
- * shift the .wrapper 240px from the right edge
- * via position: absolute to keep it in the
- * open position. When .animating, .left and
- * .right classes are not present the CSS
- * transform does not apply to .wrapper.
- */
+* If the menu-visible class is present then
+* shift the .wrapper 240px from the right edge
+* via position: absolute to keep it in the
+* open position. When .animating, .left and
+* .right classes are not present the CSS
+* transform does not apply to .wrapper.
+*/
 .menu-visible .wrapper {
-    right: 240px;
+  right: 240px;
 }
 .clearfix:after,
 .clearfix:before {
-    content: " ";
-    /* 1 */
-    display: table;
-    /* 2 */
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
 }
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
