@@ -3367,6 +3367,12 @@
 		"oAP": "\/index.php",
 		"oF": 0
 		},
+	"\/plasso-product.zip": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/plasso-product.zip",
+		"oF": 0
+		},
 	"\/README.md": {
 		"cS": 0,
 		"eF": 1,
